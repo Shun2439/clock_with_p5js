@@ -47,8 +47,8 @@ function draw() {
   pop();
 
   //時針
-  let h_x = sin(date.getHours() * Math.PI / 6 + Math.PI);
-  let h_y = cos(date.getHours() * Math.PI / 6 + Math.PI);
+  let h_x = sin(date.getHours() * -Math.PI / 6 + Math.PI);
+  let h_y = cos(date.getHours() * -Math.PI / 6 + Math.PI);
   push();
   fill(0, 0, 255);
   ellipse(h_x * scale, h_y * scale, ellipseSize);
